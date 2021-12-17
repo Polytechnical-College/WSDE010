@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject jsonObj = new JSONObject(text);
                     int token = jsonObj.getJSONObject("notice").getInt("token");
                     Log.d("Bred", jsonObj.toString());
-                    Intent intent = new Intent(this, MainActivity.class);
+                    Intent intent = new Intent(this, StartScreenActivity.class);
                     intent.putExtra("token", token);
                     startActivity(intent);
                     finish();

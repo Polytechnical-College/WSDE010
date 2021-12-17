@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grayPass">#9D9D9D</color>
+    <color name="darkPurpleBlue">#2A2E43</color>
 </resources>

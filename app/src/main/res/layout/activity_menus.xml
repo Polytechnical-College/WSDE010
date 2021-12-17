@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenusActivity"
+    android:background="@drawable/startscreenbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2C3043">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/avatar"
+                android:layout_marginVertical="35dp"
+                android:layout_marginStart="30dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewSurnameName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Ivan Ivanov"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:id="@+id/textViewCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Rostov"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="end">
+                <ImageView
+                    android:id="@+id/imageViewBurgMenu"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="38dp"
+                    android:layout_marginEnd="10dp"
+                    tools:srcCompat="@drawable/burger_menu" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#282C40"
+            android:paddingStart="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingEnd="120dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:srcCompat="@drawable/history_icon"
+                        android:layout_marginTop="2dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="History"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:srcCompat="@drawable/settings_icon"
+                        android:layout_marginTop="2dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Settings"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
