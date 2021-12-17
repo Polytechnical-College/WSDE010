@@ -76,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } catch (IOException | JSONException d) {
+                    Toast.makeText(this, "Неверный логин или пароль", Toast.LENGTH_SHORT).show();
                     Log.e("Error", d.toString());
-                    Toast.makeText(this, "Неверный логин или пароль", Toast.LENGTH_SHORT);
                 }
             }
             else
                 {
-                    Toast.makeText(this, "Заполните все поля!!!", Toast.LENGTH_SHORT);
+                    Toast.makeText(this, "Заполните все поля!!!", Toast.LENGTH_SHORT).show();
                 }
         });
 

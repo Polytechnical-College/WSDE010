@@ -80,21 +80,21 @@ public class MainActivityRegister extends AppCompatActivity {
                         }
                         else
                         {
-                            Toast.makeText(this, "Что-то пошло не так, попробуйте ввести другие данные в поля", Toast.LENGTH_SHORT);
+                            Toast.makeText(this, "Что-то пошло не так, попробуйте ввести другие данные в поля", Toast.LENGTH_SHORT).show();
                         }
                     } catch (IOException | JSONException d) {
-                        Toast.makeText(this, "Произошла неизвестная ошибка", Toast.LENGTH_SHORT);
+                        Toast.makeText(this, "Произошла неизвестная ошибка", Toast.LENGTH_SHORT).show();
                         Log.e("Error", "Произошла ошибка");
                     }
                 }
                 else
                     {
-                        Toast.makeText(this, "Пароли не совпадают", Toast.LENGTH_SHORT);
+                        Toast.makeText(this, "Пароли не совпадают", Toast.LENGTH_SHORT).show();
                     }
             }
             else
                 {
-                    Toast.makeText(this, "Заполните все поля!!!", Toast.LENGTH_SHORT);
+                    Toast.makeText(this, "Заполните все поля!!!", Toast.LENGTH_SHORT).show();
                 }
         });
     }

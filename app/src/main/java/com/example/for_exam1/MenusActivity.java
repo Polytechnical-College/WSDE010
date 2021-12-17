@@ -90,8 +90,8 @@ public class MenusActivity extends AppCompatActivity {
             textViewSurnameName.setText(fullname);
 
         } catch (IOException | JSONException d) {
+            Toast.makeText(this, "Не удалось получить данные о пользователе", Toast.LENGTH_SHORT).show();
             Log.e("Error", d.toString());
-            Toast.makeText(this, "Не удалось получить данные о пользователе", Toast.LENGTH_SHORT);
         }
     }
 }
