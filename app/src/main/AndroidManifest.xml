@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.For_exam1"
         android:usesCleartextTraffic="true">
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".DriveTimerActivity" />
+        <activity android:name=".WaitTimeActivity" />
+        <activity android:name=".StartScreenActivity" />
         <activity android:name=".MainActivityRegister" />
         <activity
             android:name=".LaunchScreen"
